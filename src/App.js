@@ -1,10 +1,10 @@
-// import logo from './logo.svg';
-// import './App.css';
+import Color from './components/Color'
 
 function App() {
-  return (
-    <div>
 
+  return (
+    <div className="App">
+      <Color/>      
     </div>
   );
 }
