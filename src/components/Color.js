@@ -28,6 +28,7 @@ const Color = () => {
         <button key={index} type='button' onClick={()=> handleColorChange(option)}>
             {option.charAt(0).toUpperCase()+ option.slice(1)}
         </button>
+        // <div></div>
       ))}
     </div>
   )
