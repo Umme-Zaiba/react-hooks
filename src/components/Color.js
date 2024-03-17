@@ -10,7 +10,8 @@ const Color = () => {
 
   return (
     <div>
-       <h1>My favourite color is {color}!</h1>
+       <h1>My favourite color is {color}!</h1>  
+    // the default color red is appplied but not that color
       {/* <button type = "button" onClick={()=> setColor("blue")}>
         Blue
       </button>
@@ -28,7 +29,6 @@ const Color = () => {
         <button key={index} type='button' onClick={()=> handleColorChange(option)}>
             {option.charAt(0).toUpperCase()+ option.slice(1)}
         </button>
-        // <div></div>
       ))}
     </div>
   )
