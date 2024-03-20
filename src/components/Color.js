@@ -1,4 +1,6 @@
+ 
 import React, {useState}  from 'react'
+import '../App.css';
 
 const Color = () => {
 
@@ -10,8 +12,10 @@ const Color = () => {
 
   return (
     <div>
-       <h1>My favourite color is {color}!</h1>  
-    // the default color red is appplied but not that color
+       <h1>My favourite color is 
+        <span style={{color:color}}> {color}! </span>
+       
+        </h1>
       {/* <button type = "button" onClick={()=> setColor("blue")}>
         Blue
       </button>
@@ -26,7 +30,7 @@ const Color = () => {
       </button> */}
 
       {colorOptions.map((option, index)=>(
-        <button key={index} type='button' onClick={()=> handleColorChange(option)}>
+        <button key={index} type='button' onClick={()=> handleColorChange(option)} className={`color-${option}`}> 
             {option.charAt(0).toUpperCase()+ option.slice(1)}
         </button>
       ))}
@@ -35,3 +39,4 @@ const Color = () => {
 }
 
 export default Color
+
